@@ -22,7 +22,7 @@ public class ComentesobreController {
     @Autowired
     ComentesobreService comentesobreService;
 
-    @RequestMapping(value = "/comment-sobre", method = RequestMethod.GET)
+    @RequestMapping(value = "/comente-sobre", method = RequestMethod.GET)
     public ModelAndView getPosts(){
         ModelAndView mv = new ModelAndView("posts");
         List<Post> posts = comentesobreService.findAll();
@@ -30,7 +30,7 @@ public class ComentesobreController {
         return mv;
     }
 
-    @RequestMapping(value="/comment-sobre/{id}", method=RequestMethod.GET)
+    @RequestMapping(value="/comente-sobre/{id}", method=RequestMethod.GET)
     public ModelAndView getPostDetails(@PathVariable("id") long id){
         ModelAndView mv = new ModelAndView("postDetails");
         Post post = comentesobreService.findById(id);
@@ -51,7 +51,7 @@ public class ComentesobreController {
         }
         post.setData(LocalDate.now());
         comentesobreService.save(post);
-        return "redirect:/comment-sobre";
+        return "redirect:/comente-sobre";
     }
 
 }
