@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<html>
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <title>Comente-sobre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+<header>
+    <!-- As a link -->
+    <nav class="navbar navbar-ligth " style="background-color:#fac055">
+        <span class= "navbar-brand mb-0 h1" style="font-weight: bold">ComenteSobre</span>
+    </nav>
+</header>
+
+<section>
+    <div class="container" style="width:60%; padding-bottom: 30px;">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" style="background-color: white; padding-left: 0px;">
+                <li class="breadcrumb-item"><a href="/comente-sobre">Página de Comentários</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Novo Comentário</li>
+            </ol>
+        </nav>
+
+        <form method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="titulo" placeholder="Título *">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="autor" placeholder="email *">
+            </div>
+
+            <textarea id="summernote" type="text" class="form-control" name="texto" placeholder="Texto *"></textarea>
+
+            <small class="form-text text-muted">(*) Campos obrigatórios</small>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Publicar</button>
+            <a href="/comente-sobre" class="btn btn-light" role="button" style="margin-top: 10px;">Cancelar</a>
+            <!--<button type="submit" class="btn" style="margin-top: 10px;">Cancelar</button>-->
+        </form>
+    </div>
+
+
+    </div>
+</section>
+
+</body>
+
+</html>
