@@ -1,4 +1,4 @@
-# CommentSobre!!!
+# Pagina de Comentarios diversos
 
 
 ![comente](https://user-images.githubusercontent.com/64502164/201922422-3e54eb53-afcc-47ff-b2b9-526a03c23a74.png)
